@@ -1,10 +1,10 @@
 <!DOCTYPE html><html lang="ja"><head>
     <meta charset="utf-8">
-    <title>のビルボード</title>
+    <title>ビルボード</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@threejs">
-    <meta name="twitter:title" content="Three.js – のビルボード">
+    <meta name="twitter:title" content="Three.js – ビルボード">
     <meta property="og:image" content="https://threejs.org/files/share.png">
     <link rel="shortcut icon" href="/files/favicon_white.ico" media="(prefers-color-scheme: dark)">
     <link rel="shortcut icon" href="/files/favicon.ico" media="(prefers-color-scheme: light)">
@@ -26,15 +26,11 @@
   <body>
     <div class="container">
       <div class="lesson-title">
-        <h1>のビルボード</h1>
+        <h1>ビルボード</h1>
       </div>
       <div class="lesson">
         <div class="lesson-main">
           <p><a href="canvas-textures.html">前回のページでは</a> <a href="/docs/#api/ja/textures/CanvasTexture"><code class="notranslate" translate="no">CanvasTexture</code></a>を使ってラベルとバッジを作りました。バッジなどが常にカメラの方向を向いて文字が読める状態になっているという効果が欲しい時があります（訳註：ビルボード効果と言います）。Three.jsは<a href="/docs/#api/ja/objects/Sprite"><code class="notranslate" translate="no">Sprite</code></a>と<a href="/docs/#api/ja/materials/SpriteMaterial"><code class="notranslate" translate="no">SpriteMaterial</code></a> を使ってビルボード効果を実現できます。</p>
-<p>In <a href="canvas-textures.html">a previous article</a> we used a <a href="/docs/#api/ja/textures/CanvasTexture"><code class="notranslate" translate="no">CanvasTexture</code></a>
-to make labels / badges on characters. Sometimes we'd like to make labels or
-other things that always face the camera. Three.js provides the <a href="/docs/#api/ja/objects/Sprite"><code class="notranslate" translate="no">Sprite</code></a> and
-<a href="/docs/#api/ja/materials/SpriteMaterial"><code class="notranslate" translate="no">SpriteMaterial</code></a> to make this happen.</p>
 <p><a href="canvas-textures.html">この記事</a>からサンプルを拝借して<a href="/docs/#api/ja/objects/Sprite"><code class="notranslate" translate="no">Sprite</code></a>と<a href="/docs/#api/ja/materials/SpriteMaterial"><code class="notranslate" translate="no">SpriteMaterial</code></a>を使ってみましょう。</p>
 <pre class="prettyprint showlinemods notranslate lang-js" translate="no">function makePerson(x, labelWidth, size, name, color) {
   const canvas = makeLabelCanvas(labelWidth, size, name);
